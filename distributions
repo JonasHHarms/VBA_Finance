@@ -22,3 +22,9 @@ Public Function cumulative_st_ndist(x As Double) As Double
         cumulative_st_ndist = w
     End If
 End Function
+
+
+Public Function standard_normal_pdf(x As Double) As Double
+    Const Pi As Double = 3.14159265358979
+    standard_normal_pdf = Exp(-x ^ 2 / 2) / Sqr(2 * Pi)
+End Function
