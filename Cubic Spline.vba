@@ -35,7 +35,7 @@ Public Function Spline(x As Double, xx() As Double, yy() As Double) As Double
       If x < xx(0) Then Num = 1 Else Num = Nmax
       b = (yy(Num) - yy(Num - 1)) / (xx(Num) - xx(Num - 1))
       a = yy(Num) - b * xx(Num)
-      SplineX3 = a + b * x
+      Spline = a + b * x
       Exit Function
     Else
       For i = 1 To Nmax
